@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <title>Faculty of Science</title>
+  <style>
+    body {
+      background-color: white;font-family: Comic Sans MS;
+    }
+  header {
+      background-color: #1e2a44;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 0px;
+       }
+ header h1 {
+   font-size: 50px;
+ }
+ header p {
+   font-size: 19px;
+   font-family: Times New Roman;
+ }
+ .programs {
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   padding: 20px;
+   border-radius: 10px;
+   font-family: Times New Roman;
+ } 
+ .programs h3 {
+   background-color: #1e2a44;
+   color: white;
+   padding: 10px;
+   border-radius: 8px;
+   display: inline-block;
+   margin: 0 auto;
+ }
+  .leaders  img {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #1e2a44;
+    border-radius: 10px;
+  }
+  .leaders h2  {
+    text-align: center;
+  }
+  .leaders p {
+    text-align: center;
+    font-size: 15px;
+    font-family: Times New Roman;
+  }
+  .team {
+    background-color: #1e2a44;
+    padding: 5px 5px;
+  }
+   .team img {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid white;
+    border-radius: 10px;
+  }
+  .team h2 {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  .team p {
+    text-align: center;
+    color: white;
+  }
+  footer {
+    text-align: center;
+    color: white;
+    background-color: #1e2a44;
+    padding: 10px;
+    height: auto;
+     }
+    .navbar {
+      background-color: #1e2a44;
+      padding: 10px;
+      color: white;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Hamburger icon */
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+    }
+
+    /* Navigation links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Show hamburger icon and hide nav on small screens */
+    @media (max-width: 600px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1e2a44;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+    }
+    
+        .scroll-buttons {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+z-index: 1000;
+}
+
+.scroll-up, .scroll-down {
+background-color:none;
+color: #1e2a44;
+border: none;
+padding: 10px 15px;
+border-radius: 50%;
+font-size: 20px;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.scroll-up:hover, .scroll-down:hover {
+background-color: #3c4f74;
+}
+  </style>
+
+  
+</head>
+<body>
+  <div class="scroll-buttons">    
+  <button onclick="scrollToTop()" class="scroll-up">⬆</button>    
+  <button onclick="scrollToBottom()" class="scroll-down">⬇</button>    
+</div>    
+  
+  
+        <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Unicontact.html">Contact Page</a></li>
+      <li><a href="Sciencefaculty.html">Science Faculty</a></li>
+      <li><a href="ArtFaculty.html">Art Faculty</a></li>
+      <li><a href="Admissionpage.html">Admission Center</a></li>
+      <li><a href="uniAboutpage.html">About Page</a></li>
+      <li><a href="Student portal.html">Student Portal</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>FACULTY OF SCIENCE</h1>
+    <p>Creating future innovators<br>and inventors</p>
+  </header>
+  
+  <div class="programs">
+  <h3>Science programs offered</h3>
+  <ul>
+    <li>Bsc. Biochemistry</li>
+    <li>Bsc. Physics</li>
+    <li>Bsc. Chemistry</li>
+    <li>Bsc. Industrial physics</li>
+    <li>Bsc. Industrial chemistry</li>
+    <li>Bsc. Mathematics</li>
+    <li>Bsc. Biology</li>
+    <li>Bsc. Nursing</li>
+    <li>Bsc. Optometry</li>
+</ul>
+</div>
+
+<div class="leaders">
+<h2>Faculty Academic Leaders</h2>
+<img src="Vinson_Founders.jpeg"alt="Head of faculty"width="300">
+<p>Head of Science Faculty <br>
+  Vin Son</p>
+  
+  <img src="DIkr29iUEAIkt5P.jpg"alt="Staff of Sc.Faculty"width="300">
+  <p>Faculty of science staffs and HOD's</p>
+  </div>
+  
+  <div class="team">
+  <h2>Howard Science Team</h2>
+  <img src="P1046953-Enhanced-NR.jpg" alt="Toleram University Science winners"width="300">
+  <p>Winning National University competition</p>
+  
+  <img src="howard case comp d.jpg"alt="prize winning money"width="300">
+  <p>National goverment Award</p>
+  
+  <img src="university-g99e2280da_1920.jpg"alt="science classroom"width="300">
+  <p> Science Classroom </p>
+  
+  <img src="doctors.jpg"alt="science pratical"width="300">
+  <p>Science pratical</p>
+  
+  <img src="DSC_5136.jpg"alt="class 2023/24 graduates"width="300">
+  <p>class 2023/24 gradutes</p>
+  </div>
+  
+  <h3 style="text-align: center">Mesaage from Faculty Head</h3>
+  <img src="Vinson_Founders.jpeg"alt="faculty head"width="350"
+  style="display: block; margin: 0 auto;">
+  <p style="padding: 5px">
+"Greetings! As the Head of the Science Faculty, I'm excited to share our commitment to advancing knowledge and innovation.<br>
+Our faculty is dedicated to providing quality education, conducting groundbreaking research, and fostering a community of curious and passionate scientists. We're passionate about shaping the next generation of leaders and contributing to the betterment of society through science."</p>
+  
+  <footer>
+    &copy;Science Faculty 2025 <br> 
+  </footer>
+  
+        <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+    function scrollToTop() {
+
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
+  </script>
+  </body>
+</html>
